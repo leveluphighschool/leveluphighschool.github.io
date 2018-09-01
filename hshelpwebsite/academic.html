@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+
+    $(window).resize(function(){
+         if ($(window).width() >=760) {
+            $(".iconrow").show();
+        }
+        else{ $(".iconrow").hide();}
+    });
+    $('button').click(function (){
+       $("div.iconrow").slideToggle(500);
+    }); 
+ });   
+    
+</script>    
+    
+<script> 
+   (function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery); 
+    
+    
+    
+    $(window).scroll(function(event) {
+  
+  $(".object").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    var win = $(window);
+var allMods = $(".object");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    </script>    
+    
+    
+</head>
+    
+    
+    <body class="notebook"> 
+        
+<!-- Navigation Bar -->    
+    <div class='banner'>
+    <!-- Logo -->
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" width="20%"></a>
+        
+        <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
+        
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%"> 
+    
+        
+    <!-- Icons on Navigation Bar -->    
+<div class="navigationbar" alt="navigation">   
+    
+<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" width="5%"></button></div>
+    
+    <div class="iconrow">
+            
+            <div class="column"><a class="link" href="whattoexpect.html">
+             <img class="icon" src="IMG/navigation/sun.png">
+             <p class="textrow">WHAT TO EXPECT</p>  
+           </a> </div>
+       
+           <div class="column">
+           <div class="divider"></div></div>
+        
+            <div class="column"><a class="link" href="academic.html">
+             <img class="icon" src="IMG/navigation/lightbulb.png">
+             <p class="textrow">ACADEMIC</p> </a> </div>
+        
+           <div class="column"><div class="divider"></div></div>
+        
+           <div class="column"><a class="link" href="extracurricular.html">
+             <img class="icon" src="IMG/navigation/soccerball.png">
+             <p class="textrow">EXTRA-CURRICULAR</p>  
+              </a> </div>
+        
+            <div class="column"><div class="divider"></div></div>
+       
+       
+           <div class="column"><a class="link" href="experiences.html">
+             <img class="icon" src="IMG/navigation/people.png">
+             <p class="textrow">EXPERIENCES</p>  
+               </a></div>
+
+     </div>
+</div>
+     </div>   
+        
+<!-- Main 'Academic' Banner -->    
+        <div class="mainBanner" id="academic"><img class="flaskLeft" src="IMG/foracademic/flask.png"><p class="mainHeading">ACADEMIC</p><img class="flaskRight" src="IMG/foracademic/flask.png"></div>
+
+        
+        <div class="content object"> <div id="opening"><i>The unavoidable truth is that starting high school means eventually you will sit some tests and exams. It can be hard to know where to start, especially if you have never to study in preparation for class in intermediate or primary school. Here is a collection of tips and advice you can use to kick start your study and get the grades you want. </i></div> </div>
+        
+        <div class="list object"> 1. LEARNING STYLE </div>
+    <div class="imagecontainer object">
+        <img class="left" src="IMG/foracademic/studyarrangement.jpg">
+        <img class="right" src="IMG/foracademic/isabella.jpg"> </div>
+        
+            <div class="section text object"> <div id="text">
+                <p>Firstly, find out what your learning style is.</p>
+                <p>If you don't know what this is, a learning style suggests what type of revision techniques that should be the most effective for you to use when you are learning new concepts based on whether your learning strengths. You can visit <a href="http://vark-learn.com/the-vark-questionnaire/the-vark-questionnaire-for-younger-people/">this link</a> to take a quiz to find out which style you align with the most.</p>
+                <p>One of the commonly followed structures show there to be four main categories of learning styles:</p>
+                <p>Possible Revision Strategies to Use Based on Learning Style:</p>
+                <ul>
+                <li>Visual: pictures, diagrams, colours, shapes, patterns, mindmaps, mnemonics</li>
+                <li>Aural: listening, discussions, songs, speaking, stories</li> 
+                <li>Reader/Writer: lists, charts, notes, writing information in your own words</li>
+                <li>Kinesthetic: movement, demonstrations, physical sensations, flash cards, games, experiences</li>    
+                </ul>
+                <p>Again, these learning styles are only suggestions of some strategies you could use when revising content in different subjects so even if you have a kinesthetic style this doesn't mean the only way you can study for that important geometry test on Monday is by juggling some triangular prisms and hoping you will somehow remember what the area of a circle is!</p>
+                <p>Year 9 is a great year for experimenting with different learning styles and finding out which work the best for you for different subjects. </p>
+                
+                <p>Once you have figured out what ways you learn the best, the only option:</p>
+                
+                </div></div>
+        
+        <div class="list object"> 2. ORGANISATION </div>
+        
+         <div class="imagecontainer object">
+        <img class="left" src="IMG/foracademic/posters.jpg">
+        <img class="right" src="IMG/foracademic/timetable.jpg"> </div>
+        
+            <div class="section text object"> <div id="text">
+            <i>Organisation is the key to success.</i>  
+            <p>In Year 9 especially, you have the tendency to study only when you have a test coming up. While many people have no issues doing this, its not really good practise because then you end up  trying to cram three terms worth of work into your brain the night before your exam.</p>
+            <p>Studying is about training your brain into recalling information easily. Organising yourself by making a timetable, and <i>sticking to it</i> is the easiest way to do this</p>
+            <p>The trick to making timetables is to factor in the time you have before, during and after school that you are willing to use in order to study. As you can see in my timetable above, I have blanked out spaces in my timetable where I have other commitments to worry about. If you want some time to spend with your friends, family or just social media do the same thing. After all, a timetable is only useful if you actually follow it; having rewards at the end of a session can be very tempting</p>
+            <p>When scheduling your study schedules, it's recommended that about you study for 25 minutes intervals at a time with 5 minute breaks in between. No one really wants to be in their room falling asleep and dying of boredom for 5 hours trying to study for their big biology test the next day. Training your brain to study for shorter, but more frequent sessions in this way increases your productivity which is always a good thing in a world where procrastination runs rampant (sadly!).</p>   
+            <p>However, if you are struggling to focus and keep to your timetable, start small. Try and do something from each of your subjects for at least 10 minutes each day. Whether this be copying your notes from class into another book, doing a few questions from a textbook or watching a video explaining a concept you are stuck on, reviewing your work after class is forces you to recall information your teacher has taught earlier in the day and hence you will be more likely to remember it in the future.</p>    
+            <p>Finally, if you are consistent with your work throughout the year, when final exams come along you'll find that it is significantly easier remember what the parts of the eye are, something you only learnt back in term one. </p>
+                
+                </div></div>
+        
+        
+        
+        <div class="list object"> 3. SUBJECT-SPECIFIC ADVICE </div>
+        
+         <div class="imagecontainer object">
+        <img class="left" src="IMG/foracademic/textbooks.jpg">
+        <img class="right" src="IMG/foracademic/physicstextbook.jpg"> </div>
+        
+            <div class="section text object"> <div id="text">Earlier, I mentioned that its a good idea to experiment with different learning styles and strategies for different subjects. Although everyone learns in their own manner, here are some clues which could help you study for each of your subjects.
+               <ul>
+                   <li>Maths</li>
+                   <p>A lot of people find maths hard because they just "don't get it" or can't understand "how would you know to find the answer like that" in a test. Unfortunately the only way to get past this is to practise. You need to make the time to simply churn your way through the type of questions you find most challenging (e.g. factorising expressions in algebra, angle rules in geometry) as this is the only way you can train yourself to remember the different methods you can use to get to an answer. Again, even if you are only moving through one hard question a day (and understanding how to find the answer if you are stuck), this is better doing nothing and puts you one step closer to being maths god!</p>
+                   <li>English</li>
+                   <p>With English in high school, you'll most likely analyse a novel, film and a few poems and be required to write a timed essay in the exam at the end of the year. The learning style you use in order to remember as much information about the texts can be more suited to your learning style (e.g. either making flashcards or writing out quotes from the text several times in or to remember them). However, in the past, in addition to writing timed plans for practise essays, I've found making brainstorms or mindmaps containing color and pictures is extremely helpful in condensing all the analysis you have done, down onto one page.</p>
+                   <li>Science</li>
+                   <p>You can really personalise the way you study for Science as well; look at using flashcards, practise questions in textbooks rewriting and condensing notes, having discussions with friends or family about concepts or even using a writeboard,play dough or mdoelling clay to physically draw or make a function you are trying to explain. One tip would be to ask your teacher for a list of all the topics you are going to learn in a certain area (e.g. Under the section 'Matter' some sub-topics could be 'Particles', 'States of Matter' and 'The Periodic Table'). On a separate piece of paper, write as much as you can remember about that topic, and afterwards check your notes to see what you still need to learn.</p>
+                   <li>Languages</li>
+                   <p>If you are studying a second language, the best way to remember new phrases or vocabulary is to expose yourself to it as much as you can. Although you may look odd, in addition to writing them down or making flashcards, repeating the words to yourself constantly, making a song/rap can be fun ways to learn these new words.</p>
+                
+                </ul>    
+                
+                
+                
+                
+                
+                </div></div>
+        
+        
+        
+        <div class="list object"> 4. RESOURCES </div>
+        
+            <div class="section text object"> <div id="text">
+                <p>Sometimes you need to fully understand something, you need it to be explained in a different way to you. There are plenty of resources you can find online, and in  textbooks available at the school library or a book shop. </p>
+                
+                <p>Before you resort to this, remember your teacher is your best resource! They are always willing to help out if you don't understand something and often hold tutorial sessions during lunchtime. If you're shy to ask during class, make sure you go to either these sessions or talk to them after the lesson ends about your questions. When you do go to them, however make sure your question is clear and specific (e.g. think about what exact part of the topic you don't understand). Remember, when you have a good relationship with your teacher, you are more likely to pay attention and enjoy coming to class so asking them questions is a great way to get to know them personally and they to you.</p>
+                <p>If you still don't understand, or your teacher is unavailable, don't worry, the Internet has your back! Websites like <a href="https://www.khanacademy.org/">Khan Academy</a>, <a href="https://www.nobraintoosmall.co.nz/">No Brain Too Small</a> and <a href="http://www.sparknotes.com/">Spark Notes</a> are useful as they contain video tutorials and other resources specifically to help out with Maths, Science, and English respectively. However, a quick Google or YouTube search can give you a multitude of other helpful videos online specific to what you are having trouble with.</p>
+                
+                
+                
+                </div></div>
+        
+        
+        <div class= "list object" id="academicsummary"> ~ SUMMARY ~ </div>
+        
+        <div class="summary object"><img class= "summaryimage" src="IMG/forwhattoexpect/imagewireframe.png"> </div>
+        
+        <div class="section text object">
+        <div id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id imperdiet sem, eget lobortis velit. Nam dolor lectus, egestas et velit nec, consectetur tincidunt nisi. Fusce at fringilla risus. Fusce porttitor, quam et vestibulum viverra, tortor libero dignissim velit, mattis ullamcorper lacus massa eget lacus. Nulla eu accumsan nisl. Proin elit ipsum, euismod eu nisl nec, sodales ultricies velit. Mauris dui lacus, rutrum non placerat nec, pharetra a tortor. Cras nec purus in nunc cursus dapibus non vitae ligula. Donec turpis turpis, blandit interdum viverra non, molestie interdum felis. Integer in faucibus turpis, eget ultrices nulla. Nulla pretium malesuada arcu, vel malesuada risus tincidunt a. Aenean ac ultrices turpis. In egestas libero a leo rutrum, sed mollis sapien vehicula.</div>
+        
+        </div>
+        <br>
+       
+    <div class="footer"> </div>    
+        
+
+    
+    </body>
+    
+   
+    
+</html>

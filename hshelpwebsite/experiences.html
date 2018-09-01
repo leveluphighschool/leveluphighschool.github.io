@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiences</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+
+    $(window).resize(function(){
+         if ($(window).width() >=760) {
+            $(".iconrow").show();
+        }
+        else{ $(".iconrow").hide();}
+    });
+    $('button').click(function (){
+       $("div.iconrow").slideToggle(500);
+    }); 
+ });   
+    
+</script>    
+    
+<script> 
+   (function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery); 
+    
+    
+    
+    $(window).scroll(function(event) {
+  
+  $(".object").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    var win = $(window);
+var allMods = $(".object");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    </script>    
+    
+    
+</head>
+    
+    
+    <body id="experiencesbackground"> 
+        
+<!-- Navigation Bar -->    
+    <div class='banner'>
+    <!-- Logo -->
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" width="20%"></a>
+        
+        <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
+        
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%"> 
+    
+        
+    <!-- Icons on Navigation Bar -->    
+<div class="navigationbar" alt="navigation">   
+    
+<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" width="5%"></button></div>
+    
+    <div class="iconrow">
+            
+            <div class="column"><a class="link" href="whattoexpect.html">
+             <img class="icon" src="IMG/navigation/sun.png">
+             <p class="textrow">WHAT TO EXPECT</p>  
+           </a> </div>
+       
+           <div class="column">
+           <div class="divider"></div></div>
+        
+            <div class="column"><a class="link" href="academic.html">
+             <img class="icon" src="IMG/navigation/lightbulb.png">
+             <p class="textrow">ACADEMIC</p> </a> </div>
+        
+           <div class="column"><div class="divider"></div></div>
+        
+           <div class="column"><a class="link" href="extracurricular.html">
+             <img class="icon" src="IMG/navigation/soccerball.png">
+             <p class="textrow">EXTRA-CURRICULAR</p>  
+              </a> </div>
+        
+            <div class="column"><div class="divider"></div></div>
+       
+       
+           <div class="column"><a class="link" href="experiences.html">
+             <img class="icon" src="IMG/navigation/people.png">
+             <p class="textrow">EXPERIENCES</p>  
+               </a></div>
+
+     </div>
+</div>
+     </div>   
+        
+<!-- Main 'Experiences' Banner -->    
+        <div class="mainBanner" id="experiences">
+            <div class="mapimages">
+        <img class="map" id="map1" src="IMG/forexperiences/map.png">
+        <img class="map" id="map2" src="IMG/forexperiences/map.png">
+        <img class="map" id="map3" src="IMG/forexperiences/map.png">
+            </div>
+        <p class="mainHeading" id="experiencesmainHeading">EXPERIENCES</p> 
+        </div>
+
+        
+        <div class="content object"> <div id="opening"><i><p>Anxious to know what high school life is like?</p> Here are some responses, advice and other tips from seven current Year 9 students on their experience in high school so far!</i></div> </div>
+   
+<section id="grid">   
+    <img class="paperdrawings object" src="IMG/forexperiences/leaf.png">
+    
+    <div class="noteparent object">
+        <div class="text notetext">
+            <img class="doodles" src="IMG/forexperiences/planets.png">
+          <p>When I first started high school I found it very nerve racking because the school was so big, and I didn’t want to get lost. It was very different to intermediate and primary because you had a timetable and I knew that the work would be a lot harder. Another challenge in the first few weeks of school, I was doing homework everyday, and carrying my bag around to each class with me.</p>
+        <br>
+        <p>In the first few weeks I was happy because I had my friends from Intermediate to hang out with at breaks, but it was harder to make new ones because I didn’t know anyone that well. I made some really good friends in form class after that and now I love form time because of my classmates and teacher. The school work was hard at first because I had a whole lot of different things I had to do for each subject. It was hard to get everything done on time but after I got into the habit of using my diary to write down when everything was due it was easier. </p>
+        <br>
+        <p>What I find interesting about high school is the timetable; we didn’t have them at intermediate so it made it quite exciting to use them. Also having different times for break and rules such as wearing your blazer on assembly days these were very different to intermediate because we didn’t have these things, also there is no playground and people don’t play games they just go on their phones.</p>
+        <br>    
+        <p><strong>Advice I would give to new students would be:</strong></p>
+               <ul>
+                    <li>Use your diary as it has helped me so much, to keep up with all my homework and know when everything is due.</li>
+                    <li>Try to start a conversation with someone on your table in classes including in form time because then you will have someone to talk to instead of being alone.</li>
+                    <li>Try out for as many things as you can whether it is sport, music etc because it gives you a opportunity to make more friends.</li>
+               </ul>    
+        </div>
+
+    <img class="pin" src="IMG/forexperiences/redpin.png">
+    
+        </div>
+        
+        
+        <div class="noteparent object">
+                <div class="text notetext">
+                    <img class="doodles" id="mountains" src="IMG/forexperiences/mountains.png"> 
+                   So far, high school has been a roller coaster. I have made plenty of new friends and learnt so much at Westlake, although sometimes I feel pressured when studying for tests (but I believe pressure is a good thing as it makes you work harder). It is quite different to intermediate and primary because you change classes/teachers more often. There has definitely been an increase in the amount of homework we get and sometimes I struggle at home, to fit in homework after all my school activities. I hope in the future, that I will have the courage to try new things and grab opportunities so that I am an experienced and and knowledgeable girl who can make a difference in the world. 
+                </div>
+                <img class="pin" src="IMG/forexperiences/purple%20pin.png">
+            
+            </div>
+     
+      <img class="paperdrawings object" src="IMG/forexperiences/molecule.png">
+        
+         <div class="noteparent object">
+                <div class="text notetext">
+                  In the first few weeks of school it was quite nerve wracking because the school was really big and I had no idea where to go for all of my classes. Eventually you learn where all the blocks are and then you realise it isn’t actually as hard as you imagined. The thing that I found most interesting about high school is that I didn’t know anyone in most of my classes but I found that I made friends quite easily and I connected with people that I would never have if my friends from my old school were in my classes. 
+                </div>
+                <img class="pin" src="IMG/forexperiences/greenpin.png">
+            </div>
+     
+              <img class="paperdrawings object" src="IMG/forexperiences/chromosome.png">
+
+              <div class="noteparent object">
+                <div class="text notetext">
+                    <img class="doodles" src="IMG/forexperiences/crosses.png">
+                  I found high school quite challenging because there was a lot more homework given and the school is so much bigger than my intermediate. I found it interesting that we got to carry our bags everywhere we went as well as getting a timetable (which determines the classes you have each day) and being able to keep our phones with us all day. I found it helpful to use a diary to track all my activities. There are also a lot of sports and clubs that you can consider joining here.
+                </div>
+        </div>
+        
+        <img class="paperdrawings object" src="IMG/forexperiences/atom.png">
+        
+               <div class="noteparent object">
+                <div class="text notetext">   
+                 <p>Some of the challenges that I faced in the first couple of weeks was trying to find my way around the school to my classes and getting my homework done on time. </p>
+
+                  <p>One thing that I found interest was how many options there was for sports and other thing that interested me. </p>
+
+                  <p>One thing that I found different about high school and compared to intermediate is that most of my subjects used book rather than intermediate where everything that we did was on devices. Another thing that I found different was that we have a lot of homework. <p>
+
+                  <p>Some general tips for the next year of students is try to get your homework done before the due date because you will be stressing the night before.<p>
+
+                <img class="pin" src="IMG/forexperiences/redpin.png">
+                   </div></div>
+           
+                   <img class="paperdrawings object" src="IMG/forexperiences/flower.png">               
+    
+                   <div class="noteparent object">
+                <div class="text notetext">
+                 <strong>Challenges I faced:</strong>
+                    <ul>
+                    <li>Walking from class to class to different parts of the school each period.</li>
+                    <li>Carrying my school bag everywhere</li>
+                    <li>Getting used to the masses of assignments and homework I was receiving.</li>    
+                    </ul>
+                    
+                    <strong>What I found interesting:</strong>
+                    <ul>
+                    <li>We can hire lockers for the year to store our books and other gear</li>
+                    <li>There are so many clubs and sports we can sign up to</li>
+                    </ul>
+                    
+                    <strong>What I found difficult:</strong>
+                    You receive so much homework and you have to work harder to get good grades in all your classes compared to intermediate.
+                    
+                    <p><strong>My Tips:</strong></p>
+                    <ul>
+                    <li>Balance the time you spend doing homework with other things (e.g. family time, go to the movies with friends)</li>
+                    <li>Stay positive even if you feel overwhelmed with school work</li>    
+                    </ul>
+
+                <img class="pin" src="IMG/forexperiences/greenpin.png">
+            </div>          
+                       
+                    <div class="noteparent object">
+                <div class="text notetext">
+                    <img class="doodles" id="clouds" src="IMG/forexperiences/clouds.png"> 
+                  <strong>Challenges:</strong>
+                    <ul>
+                    <li>Getting used to the amount of assignments we get</li>
+                    <li>Figuring out who to hang out with</li>
+                    <li>Getting around school</li>    
+                    </ul>
+                    
+                    <strong>Interesting Things:</strong>
+                    <ul>
+                    <li>Meeting new people</li>
+                    <li>Learning new things</li>    
+                    </ul>
+                    
+                    <strong>Different Things:</strong>
+                    <ul>
+                    <li>Huge number of people</li>
+                    <li>So much homework!</li>
+                    </ul>    
+                    <strong>Tips:</strong>
+                    <ul>
+                    <li>Make a schedule that works for you</li>
+                    <li>Don't overwork yourself</li>
+                    <li>Make new friends, but keep some old ones too</li>  
+                    <li>Do your work - don't muck around in class</li>
+                    <li>Balance school work with home life</li>
+                    <li>Do lots of extra-curriculars such as joining committees - I didn't (biggest regret) </li>    
+                    </ul>
+                
+                 </div>
+                <img class="pin" src="IMG/forexperiences/pinkpin.png">
+            </div>
+       
+                   </div>
+                
+</section>     
+    
+    
+    <br>
+       
+    <div class="footer"> </div>    
+
+
+        
+    </body>
+    
+   
+    
+</html>    
