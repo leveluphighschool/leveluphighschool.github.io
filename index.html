@@ -8,7 +8,16 @@
 <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+         /** The script below was made with assistance from www.stackoverflow.com/questions/33678676/navigatin-bar-toggle-menu-jquery# 
+    and 
+    www.w3schools.com/jquery/jquery_hide_show.asp.
+    
+    It controls the 'toggle' button which shows and hides the responsive navigation menu. The 'resize function' seen means that if the viewport width is greater than 760px (less than this width is when the responsive navigation bar (vertical links) first appears, then the horizontal links navigation bar will always be shown. */ 
+    </script>
+    
+    
 <script>
 $(document).ready(function(){
 
@@ -24,9 +33,12 @@ $(document).ready(function(){
  });   
     
 </script>    
- <script> 
-   (function($) {
-
+  
+    
+    <script> 
+            /** This script was made fully with the help of https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ and involves the use of not only jQuery to compare how close an element is to the visible window of screen, but all CSS transitions to employ the fade in effect. */ 
+     (function($) {     
+       
   /**
    * Copyright 2012, Digital Fusion
    * Licensed under the MIT license.
@@ -98,22 +110,22 @@ win.scroll(function(event) {
 <!-- Navigation Bar -->    
     <div class='banner'>
     <!-- Logo -->
-        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" width="20%"></a>
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" alt="navigation" width="20%"></a>
         
         <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
         
-        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%">
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%" alt="books">
     
         
     <!-- Icons on Navigation Bar -->    
 <div class="navigationbar" alt="navigation">   
     
-<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" width="5%"></button></div>
+<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" alt="navigation button"width="5%"></button></div>
     
     <div class="iconrow">
             
             <div class="column"><a class="link" href="whattoexpect.html">
-             <img class="icon" src="IMG/navigation/sun.png">
+             <img class="icon" src="IMG/navigation/sun.png" alt="What To Expect">
              <p class="textrow">WHAT TO EXPECT</p>  
            </a> </div>
        
@@ -121,13 +133,13 @@ win.scroll(function(event) {
            <div class="divider"></div></div>
         
             <div class="column"><a class="link" href="academic.html">
-             <img class="icon" src="IMG/navigation/lightbulb.png">
+             <img class="icon" src="IMG/navigation/lightbulb.png" alt="Academic">
              <p class="textrow">ACADEMIC</p> </a> </div>
         
            <div class="column"><div class="divider"></div></div>
         
            <div class="column"><a class="link" href="extracurricular.html">
-             <img class="icon" src="IMG/navigation/soccerball.png">
+             <img class="icon" src="IMG/navigation/soccerball.png" alt="Extra-Curricular">
              <p class="textrow">EXTRA-CURRICULAR</p>  
               </a> </div>
         
@@ -135,7 +147,7 @@ win.scroll(function(event) {
        
        
            <div class="column"><a class="link" href="experiences.html">
-             <img class="icon" src="IMG/navigation/people.png">
+             <img class="icon" src="IMG/navigation/people.png" alt="Experiences">
              <p class="textrow">EXPERIENCES</p>  
                </a></div>
 
@@ -154,7 +166,7 @@ win.scroll(function(event) {
             
                     <div class="list"> ~ EXPERIENCES ~ </div>
             <a href="experiences.html"><div class="imagehovercontainer">
-                <img class="imagelink" id="notepad" src="IMG/forhome/notepad.jpg">
+                <img class="imagelink" id="notepad" src="IMG/forhome/notepad.jpg" alt="notepad">
                 </div></a>
             
             <p>Find out what it's like to be in high school! Seven current Year 9 students have kindly shared advice and tips that allowed them to balance their academics with extra-curricular activites and their social lives. Discover what parts of high school they found interesting, challenges they faced and how they overcame them. </p> </div></div> 
@@ -163,7 +175,7 @@ win.scroll(function(event) {
         <div class="containerforcontent object"><div class="content" id="post"> 
             
             <div class="list"> ~ WHAT TO EXPECT ~ </div>
-            <a href="whattoexpect.html"><div class="imagehovercontainer"><img class="imagelink" id="trees" src="IMG/forhome/trees.jpg"></div></a>
+            <a href="whattoexpect.html"><div class="imagehovercontainer"><img class="imagelink" id="trees" src="IMG/forhome/trees.jpg" alt="trees"></div></a>
             
             <p>As with any new environment, the first few weeks of school can be quite terrifying as you test the waters and slowly get into the rhythm of school life. This page is designed to give you some insight into the kind of routine and demands that are expected from you as a Year 9 student. You'll learn how to make the most of your first day, keep track of your homework, get to your classes and so on!</p>  </div></div> 
 <br>
@@ -171,7 +183,7 @@ win.scroll(function(event) {
         <div class="containerforcontent object"><div class="content" id="post"> 
             
             <div class="list"> ~ ACADEMIC ~ </div>
-             <a href="academic.html"><div class="imagehovercontainer"><img class="imagelink" id="desk" src="IMG/forhome/desk.jpg"> 
+             <a href="academic.html"><div class="imagehovercontainer"><img class="imagelink" id="desk" src="IMG/forhome/desk.jpg" alt="desk"> 
                  </div></a>
             
             <p>It's no secret that you're expected to do so much more homework each night in high school compared to intermediate. Here, you'll find advice about the best ways you can balance your homework with YouTube time, and avoid the dreaded P word - PROCRASTINATION. Discover what methods of learning you align most strongly with and what techniques you can integrate into your study routine to get the best possible grades you want.</p> </div></div>
@@ -180,7 +192,7 @@ win.scroll(function(event) {
     <div class="containerforcontent object"><div class="content" id="post">
             
             <div class="list"> ~ EXTRA-CURRICULAR ~ </div>
-            <a href="extracurricular.html"><div class="imagehovercontainer"><img class="imagelink" id="hockeysticks" src="IMG/forhome/hockeysticks.jpg"></div></a>
+            <a href="extracurricular.html"><div class="imagehovercontainer"><img class="imagelink" id="hockeysticks" src="IMG/forhome/hockeysticks.jpg" alt="hockey" ></div></a>
 
             
             <p>Extra-curricular activities are such a big part of life at high school. Not only do they express your commitment and involvement within the school, giving you the opportunity to receive leadership roles in your senior years (e.g. Prefect, Librarian, Leader of a Committee, Head Boy/Girl), but they also allow you to make friends with those who share your interests. Use this page to find out what activities you might be interested in participating in. </p> </div>

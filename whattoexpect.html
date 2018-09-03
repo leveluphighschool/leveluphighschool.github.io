@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What To Expect</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    
+    </script>
+<script>
+$(document).ready(function(){
+
+    $(window).resize(function(){
+         if ($(window).width() >=760) {
+            $(".iconrow").show();
+        }
+        else{ $(".iconrow").hide();}
+    });
+    $('button').click(function (){
+       $("div.iconrow").slideToggle(500);
+    }); 
+ });   
+    
+</script>    
+ 
+    
+    <script> 
+        /** This script was made fully with the help of https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ and involves the use of not only jQuery to compare how close an element is to the visible window of screen, but all CSS transitions to employ the fade in effect. */ 
+     (function($) {     
+       
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery); 
+    
+    
+    
+    $(window).scroll(function(event) {
+  
+  $(".object").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    var win = $(window);
+var allMods = $(".object");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    </script>    
+    
+</head>
+    
+    
+    <body class="notebook"> 
+        
+<!-- Navigation Bar -->    
+    <div class='banner'>
+    <!-- Logo -->
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" alt="navigation" width="20%"></a>
+        
+        <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
+        
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%" alt="books">
+    
+        
+    <!-- Icons on Navigation Bar -->    
+<div class="navigationbar" alt="navigation">   
+    
+<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" alt="navigation button"width="5%"></button></div>
+    
+    <div class="iconrow">
+            
+            <div class="column"><a class="link" href="whattoexpect.html">
+             <img class="icon" src="IMG/navigation/sun.png" alt="What To Expect">
+             <p class="textrow">WHAT TO EXPECT</p>  
+           </a> </div>
+       
+           <div class="column">
+           <div class="divider"></div></div>
+        
+            <div class="column"><a class="link" href="academic.html">
+             <img class="icon" src="IMG/navigation/lightbulb.png" alt="Academic">
+             <p class="textrow">ACADEMIC</p> </a> </div>
+        
+           <div class="column"><div class="divider"></div></div>
+        
+           <div class="column"><a class="link" href="extracurricular.html">
+             <img class="icon" src="IMG/navigation/soccerball.png" alt="Extra-Curricular">
+             <p class="textrow">EXTRA-CURRICULAR</p>  
+              </a> </div>
+        
+            <div class="column"><div class="divider"></div></div>
+       
+       
+           <div class="column"><a class="link" href="experiences.html">
+             <img class="icon" src="IMG/navigation/people.png" alt="Experiences">
+             <p class="textrow">EXPERIENCES</p>  
+               </a></div>
+
+     </div>
+</div>
+     </div>   
+        
+
+        
+<!-- Main 'What To Expect' Banner -->    
+        <div class="mainBanner" id="whattoexpect"><img class="appleLeft" src="IMG/forwhattoexpect/apple1.png" alt="apple"><p class="mainHeading">WHAT TO EXPECT</p><img class="appleRight" src="IMG/forwhattoexpect/apple1.png" alt="apple"></div>
+
+        
+        <div class="content object"> <div id="opening"><i>How different is high school REALLY from intermediate? <br>Read on to find the answer as well as how to prepare yourself. Learn the best way to know where all your classes are, how to make new friends, organisation skills and so on.</i></div> </div>
+        
+        <div class="list object"> 1. ENVIRONMENT </div>
+    <div class="imagecontainer object">
+        <img class="left" src="IMG/forwhattoexpect/trees.jpg" alt="tree">
+        <img class="right" id="gym" src="IMG/forwhattoexpect/gym.jpg" alt="gym"> </div>
+        
+            <div class="section object text">
+                Finding your way around any new environment is always difficult. Here are some of the best ways to learn adjust yourself:
+                    <ul>
+                    <li>Use landmarks to help find your way around school (e.g. B-block is the brick building that is to the right of the tuck shop).</li>
+                
+                    <li>Know where signposts which point to the direction of blocks of classrooms are.</li>
+                
+                    <li>Ask lots of questions to prefects, teachers and friends about where certain buildings are, tuckshop, administration office, nurse's office and of course toilets!</li>
+                
+                    <li>Use your phone!
+                    Set your school timetable and a map of the school (can be downloaded from most schools’ websites) as either your lock or home screen background to help you remember the order of your classes and where they are in the school </li>
+
+                </ul>
+        
+        
+        </div>
+        
+        <div class="list object"> 2. CLASSES </div>
+        
+         <div class="imagecontainer object">
+        <img class="left" src="IMG/forwhattoexpect/lab.jpg" alt="lab">
+        <img class="right" src="IMG/forwhattoexpect/classroom.jpg" alt="classroom"> </div>
+        
+            <div class="section object text">
+        The main difference between intermediate and high school is having to carry your bag around to a new classes each period with different teachers and students. Here are my top tips to help out with adjusting:
+                <ul>
+                    <li>If you have a locker, make sure you have the right gear for your classes by visiting it before school or during break</li>
+                    <li>Make good friendships with your teachers and classmates - classes are so much more fun when you know at least one person in the room. Remember your classmates are in the same boat so you don't need to be scared of talking to them. </li>
+                    <li>Follow your teacher’s instructions: you may find yourself working in potentially dangerous rooms such as science labs or workshops (e.g. bags underneath tables, wear safety goggles)</li>
+               </ul>
+        </div>
+        
+        <div class="list object"> 3. HOMEWORK / ASSESSMENTS </div>
+        
+         <div class="imagecontainer object">
+        <img class="left" src="IMG/forwhattoexpect/kelly.jpg" alt="Kelly">
+        <img class="right" src="IMG/forwhattoexpect/diary.jpg" alt="diary"> </div>
+        
+            <div class="section object text">
+                Unfortunately, you will get definitely get a LOT more homework compared to in intermediate school.  But it's not the end of the world! Here are some tips you can use to organise yourself:
+                <ul>
+                <li>Separate a huge project into small jobs you can do each day opposed to procrastinating and leaving it all to do the night before.
+                    For example, say you have an essay due on Friday. On Monday, come up with a plan for it. Tuesday write the introduction. Wednesday write the first body paragraph and repeat and repeat! That is so much easier than sitting at your desk with what seems like a mountain of an assignment to get through. </li>
+                <li>Use a diary to plan out your weeks - plan for both social and study time; balance </li>
+                <li>Make the most of lunchtime and before/after school - can visit the school library or go to tutorials for a subject for help</li>
+                <li>Ensure you know exactly what is required for a project - ask teachers if confused or have any problems</li>
+                 </ul>
+                </div>
+        
+        
+        
+        <div class="list object"> 4. ADVICE FOR THE FIRST DAY </div>
+        
+            <div class="section object text">
+                <ul>
+                <li>Pack your lunch and bag the night before</li>
+                <li>Bring a pen and refill paper just in case you need to be writing.</li>
+                <li>Make sure you know how you are getting home (e.g. what bus you are catching)</li>
+                <li>Ask questions</li>
+                <li>Enjoy yourself!</li>
+                </ul>    
+                </div>
+        
+        
+        <div class="list object" id="whattoexpectsummary"> ~ SUMMARY ~ </div>
+        
+        <div class="summary object"><img class="summaryimage" src="IMG/forwhattoexpect/Page%201.png"> </div>
+
+       
+        <br>
+       
+    <div class="footer"> </div>    
+        
+
+    
+    </body>
+    
+   
+    
+</html>

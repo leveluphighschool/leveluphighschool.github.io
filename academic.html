@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
+  
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">/** The script below was made with assistance from www.stackoverflow.com/questions/33678676/navigatin-bar-toggle-menu-jquery# 
+    and 
+    www.w3schools.com/jquery/jquery_hide_show.asp.
+    
+    It controls the 'toggle' button which shows and hides the responsive navigation menu. The 'resize function' seen means that if the viewport width is greater than 760px (less than this width is when the responsive navigation bar (vertical links) first appears, then the horizontal links navigation bar will always be shown. */</script>
+<script>
+$(document).ready(function(){
+
+    $(window).resize(function(){
+         if ($(window).width() >=760) {
+            $(".iconrow").show();
+        }
+        else{ $(".iconrow").hide();}
+    });
+    $('button').click(function (){
+       $("div.iconrow").slideToggle(500);
+    }); 
+ });   
+    
+</script>    
+ 
+
+    
+    <script> 
+     /** This script was made fully with the help of https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ and involves the use of not only jQuery to compare how close an element is to the visible window of screen, but all CSS transitions to employ the fade in effect. */  
+     (function($) {     
+       
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery); 
+    
+    
+    
+    $(window).scroll(function(event) {
+  
+  $(".object").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    var win = $(window);
+var allMods = $(".object");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    </script>    
+    
+</head>
+    
+    
+    <body class="notebook"> 
+        
+<!-- Navigation Bar -->    
+    <div class='banner'>
+    <!-- Logo -->
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" alt="navigation" width="20%"></a>
+        
+        <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
+        
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%" alt="books">
+    
+        
+    <!-- Icons on Navigation Bar -->    
+<div class="navigationbar" alt="navigation">   
+    
+<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" alt="navigation button"width="5%"></button></div>
+    
+    <div class="iconrow">
+            
+            <div class="column"><a class="link" href="whattoexpect.html">
+             <img class="icon" src="IMG/navigation/sun.png" alt="What To Expect">
+             <p class="textrow">WHAT TO EXPECT</p>  
+           </a> </div>
+       
+           <div class="column">
+           <div class="divider"></div></div>
+        
+            <div class="column"><a class="link" href="academic.html">
+             <img class="icon" src="IMG/navigation/lightbulb.png" alt="Academic">
+             <p class="textrow">ACADEMIC</p> </a> </div>
+        
+           <div class="column"><div class="divider"></div></div>
+        
+           <div class="column"><a class="link" href="extracurricular.html">
+             <img class="icon" src="IMG/navigation/soccerball.png" alt="Extra-Curricular">
+             <p class="textrow">EXTRA-CURRICULAR</p>  
+              </a> </div>
+        
+            <div class="column"><div class="divider"></div></div>
+       
+       
+           <div class="column"><a class="link" href="experiences.html">
+             <img class="icon" src="IMG/navigation/people.png" alt="Experiences">
+             <p class="textrow">EXPERIENCES</p>  
+               </a></div>
+
+     </div>
+</div>
+     </div>   
+        
+
+<!-- Main 'Academic' Banner -->    
+        <div class="mainBanner" id="academic"><img class="flaskLeft" src="IMG/foracademic/flask.png" alt="flask"><p class="mainHeading">ACADEMIC</p><img class="flaskRight" src="IMG/foracademic/flask.png" alt="flask"></div>
+
+        
+        <div class="content object"> <div id="opening"><i>The unavoidable truth is that starting high school means eventually you will sit some tests and exams. It can be hard to know where to start, especially if you have never to study in preparation for class in intermediate or primary school. Here is a collection of tips and advice you can use to kick start your study and get the grades you want. </i></div> </div>
+        
+        <div class="list object"> 1. LEARNING STYLE </div>
+    <div class="imagecontainer object">
+        <img class="left" src="IMG/foracademic/studyarrangement.jpg" alt="study arrangement">
+        <img class="right" src="IMG/foracademic/isabella.jpg" alt="Isabella"> </div>
+        
+            <div class="section text object"> <div id="text">
+                <p>If you don't know what a learning style is, it suggests the type of revision techniques that should be the most useful for you to use when you are learning new concepts based on your personality. <br>Visit <a href="http://vark-learn.com/the-vark-questionnaire/the-vark-questionnaire-for-younger-people/">this link</a> to take a quiz to find out whether you are a Visual, Aural, Reader/Writer or Kinesthetic learner.</p>
+                <p>Here are some possible strategies you could use based on your learning style:</p>
+                <ul>
+                <li>Visual: pictures, diagrams, colours, shapes, patterns, mindmaps, mnemonics</li>
+                <li>Aural: listening, discussions, songs, speaking, stories</li> 
+                <li>Reader/Writer: lists, charts, notes, writing information in your own words</li>
+                <li>Kinesthetic: movement, demonstrations, physical sensations, flash cards, games, experiences</li>    
+                </ul>
+                <p>Again, these learning styles are only suggestions of some strategies you could use in your study. Some techniques are more helpful in certain subjects compared to others as you can see further down the page. </p>
+             
+                
+                </div></div>
+        
+        <div class="list object"> 2. ORGANISATION </div>
+        
+         <div class="imagecontainer object">
+        <img class="left" src="IMG/foracademic/posters.jpg" alt="brainstorms">
+        <img class="right" src="IMG/foracademic/timetable.jpg" alt="timetable"> </div>
+        
+            <div class="section text object"> <div id="text">
+          
+            <p>Studying is about training your brain into recalling information easily. Organising yourself by making a timetable, and <i>sticking to it</i> is the easiest way to do this.</p> 
+                <p>Here's some tips for making a great timetable:</p>
+                <ul>
+            <li>Be honest with the time you actually want to spend studying after school - blank out spaces for when you are doing extra-curricular activites or want to spend time with family and friends. </li>
+            <li>Make your study sessions short. No one really wants to be in their room for 5 hours trying to study for their biology test the next day. Training your brain to study for about 25 minutes at a time with 5 minute breaks in between is the best way to get the most work done without tiring yourself out. </li>   
+            <li>Having trouble sticking to your timetable?
+                <br>Start small. <br>Try and do something from each of your subjects for at least 10 minutes each day. Whether this be copying your notes from class into another book, doing a few questions from a textbook or watching a video explaining a concept you are stuck on, reviewing your work after class is forces you to remember information your teacher has taught earlier in the day. </li>    
+                </ul>
+                </div></div>
+        
+        
+        
+        <div class="list object"> 3. SUBJECT-SPECIFIC ADVICE </div>
+        
+         <div class="imagecontainer object">
+        <img class="left" src="IMG/foracademic/textbooks.jpg" alt="textbooks">
+        <img class="right" src="IMG/foracademic/physicstextbook.jpg" alt="workbook"> </div>
+        
+            <div class="section text object"> <div id="text">Earlier, I mentioned that its a good idea to experiment with different learning styles and strategies for different subjects. Although everyone learns in their own manner, here are some clues which could help you study for each of your subjects.
+               <ul>
+                   <li>Maths</li>
+                   <p> Make the time to simply churn your way through the type of questions you find most challenging (e.g. factorising expressions in algebra, angle rules in geometry) as this is the only way you can train yourself to remember the different ways you can get to an answer. </p>
+                   <li>English</li>
+                   <p>Studying for English can be more personalised for your learning style (e.g. either making flashcards or writing out quotes from the text several times in or to remember them). in addition to writing timed plans for practise essays, I've found making brainstorms or mindmaps containing color and pictures is extremely helpful in condensing all the analysis you have done, down onto one page.</p>
+                   <li>Science</li>
+                   <p>You can really personalise the way you study for Science as well; look at using flashcards, practise questions in textbooks rewriting and condensing notes, having discussions with friends or family about concepts or even using a writeboard, play dough or mdoelling clay to physically draw or make a function you are trying to explain. </p>
+                   <p>One tip would be to ask your teacher for a list of all the topics you are going to learn in a certain area (e.g. Under the section 'Matter' some sub-topics could be 'Particles', 'States of Matter' and 'The Periodic Table'). On a separate piece of paper, write as much as you can remember about that topic, and afterwards check your notes to see what you still need to learn.</p>
+                   <li>Languages</li>
+                   <p> To learn new words, as well as writing them down or making flashcards, repeating them to yourself constantly or even making a song/rap.</p>
+                
+                </ul>    
+                
+        
+                
+                </div></div>
+        
+        
+        
+        <div class="list object"> 4. RESOURCES </div>
+        
+            <div class="section text object"> <div id="text">
+                <p>Sometimes you need to fully understand something, you need it to be explained in a different way to you. There are plenty of resources you can find online, and in  textbooks available at the school library or a book shop. You can also:</p>
+                <ul>
+                <li>Your teacher is your best resource! If you are unsure, give yourself time to think about what exactly you don't understand and ask them anything,</li>
+                <li>Websites like <a href="https://www.khanacademy.org/">Khan Academy</a>, <a href="https://www.nobraintoosmall.co.nz/">No Brain Too Small</a> and <a href="http://www.sparknotes.com/">Spark Notes</a> have your back as well as they contain video tutorials and other resources specifically to help out with Maths, Science, and English respectively. However, a quick Google or YouTube search can give you a multitude of other helpful videos online specific to what you are having trouble with.</li>
+                </ul>
+                
+                
+                </div></div>
+        
+        
+        <div class= "list object" id="academicsummary"> ~ SUMMARY ~ </div>
+        
+        <div class="summary object"><img class= "summaryimage" alt="summary" src="IMG/foracademic/Brainstorm%20-%20Page%202.png"> </div>
+        
+
+        <br>
+       
+    <div class="footer"> </div>    
+        
+
+    
+    </body>
+    
+   
+    
+</html>

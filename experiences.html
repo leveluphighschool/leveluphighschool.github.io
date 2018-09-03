@@ -8,8 +8,14 @@
 <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        /** The script below was made with assistance from www.stackoverflow.com/questions/33678676/navigatin-bar-toggle-menu-jquery# 
+    and 
+    www.w3schools.com/jquery/jquery_hide_show.asp.
+    
+    It controls the 'toggle' button which shows and hides the responsive navigation menu. The 'resize function' seen means that if the viewport width is greater than 760px (less than this width is when the responsive navigation bar (vertical links) first appears, then the horizontal links navigation bar will always be shown. */</script>
 <script>
 $(document).ready(function(){
 
@@ -25,10 +31,12 @@ $(document).ready(function(){
  });   
     
 </script>    
+ 
     
-<script> 
-   (function($) {
-
+    <script> 
+         /** This script was made fully with the help of https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ and involves the use of not only jQuery to compare how close an element is to the visible window of screen, but all CSS transitions to employ the fade in effect. */  
+     (function($) {     
+       
   /**
    * Copyright 2012, Digital Fusion
    * Licensed under the MIT license.
@@ -92,31 +100,30 @@ win.scroll(function(event) {
 });
     </script>    
     
-    
 </head>
     
     
-    <body id="experiencesbackground"> 
+    <body class="notebook"> 
         
 <!-- Navigation Bar -->    
     <div class='banner'>
     <!-- Logo -->
-        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" width="20%"></a>
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" alt="navigation" width="20%"></a>
         
         <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
         
-        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%"> 
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%" alt="books">
     
         
     <!-- Icons on Navigation Bar -->    
 <div class="navigationbar" alt="navigation">   
     
-<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" width="5%"></button></div>
+<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" alt="navigation button"width="5%"></button></div>
     
     <div class="iconrow">
             
             <div class="column"><a class="link" href="whattoexpect.html">
-             <img class="icon" src="IMG/navigation/sun.png">
+             <img class="icon" src="IMG/navigation/sun.png" alt="What To Expect">
              <p class="textrow">WHAT TO EXPECT</p>  
            </a> </div>
        
@@ -124,13 +131,13 @@ win.scroll(function(event) {
            <div class="divider"></div></div>
         
             <div class="column"><a class="link" href="academic.html">
-             <img class="icon" src="IMG/navigation/lightbulb.png">
+             <img class="icon" src="IMG/navigation/lightbulb.png" alt="Academic">
              <p class="textrow">ACADEMIC</p> </a> </div>
         
            <div class="column"><div class="divider"></div></div>
         
            <div class="column"><a class="link" href="extracurricular.html">
-             <img class="icon" src="IMG/navigation/soccerball.png">
+             <img class="icon" src="IMG/navigation/soccerball.png" alt="Extra-Curricular">
              <p class="textrow">EXTRA-CURRICULAR</p>  
               </a> </div>
         
@@ -138,7 +145,7 @@ win.scroll(function(event) {
        
        
            <div class="column"><a class="link" href="experiences.html">
-             <img class="icon" src="IMG/navigation/people.png">
+             <img class="icon" src="IMG/navigation/people.png" alt="Experiences">
              <p class="textrow">EXPERIENCES</p>  
                </a></div>
 
@@ -146,12 +153,14 @@ win.scroll(function(event) {
 </div>
      </div>   
         
+
+        
 <!-- Main 'Experiences' Banner -->    
         <div class="mainBanner" id="experiences">
             <div class="mapimages">
-        <img class="map" id="map1" src="IMG/forexperiences/map.png">
-        <img class="map" id="map2" src="IMG/forexperiences/map.png">
-        <img class="map" id="map3" src="IMG/forexperiences/map.png">
+        <img class="map" id="map1" src="IMG/forexperiences/map.png" alt="map">
+        <img class="map" id="map2" src="IMG/forexperiences/map.png" alt="map">
+        <img class="map" id="map3" alt="map" src="IMG/forexperiences/map.png">
             </div>
         <p class="mainHeading" id="experiencesmainHeading">EXPERIENCES</p> 
         </div>
@@ -160,11 +169,11 @@ win.scroll(function(event) {
         <div class="content object"> <div id="opening"><i><p>Anxious to know what high school life is like?</p> Here are some responses, advice and other tips from seven current Year 9 students on their experience in high school so far!</i></div> </div>
    
 <section id="grid">   
-    <img class="paperdrawings object" src="IMG/forexperiences/leaf.png">
+    <img class="paperdrawings object" src="IMG/forexperiences/leaf.png" alt="vine">
     
     <div class="noteparent object">
         <div class="text notetext">
-            <img class="doodles" src="IMG/forexperiences/planets.png">
+            <img class="doodles" src="IMG/forexperiences/planets.png" alt="planet">
           <p>When I first started high school I found it very nerve racking because the school was so big, and I didn’t want to get lost. It was very different to intermediate and primary because you had a timetable and I knew that the work would be a lot harder. Another challenge in the first few weeks of school, I was doing homework everyday, and carrying my bag around to each class with me.</p>
         <br>
         <p>In the first few weeks I was happy because I had my friends from Intermediate to hang out with at breaks, but it was harder to make new ones because I didn’t know anyone that well. I made some really good friends in form class after that and now I love form time because of my classmates and teacher. The school work was hard at first because I had a whole lot of different things I had to do for each subject. It was hard to get everything done on time but after I got into the habit of using my diary to write down when everything was due it was easier. </p>
@@ -179,39 +188,39 @@ win.scroll(function(event) {
                </ul>    
         </div>
 
-    <img class="pin" src="IMG/forexperiences/redpin.png">
+    <img class="pin" src="IMG/forexperiences/redpin.png" alt="pin">
     
         </div>
         
         
         <div class="noteparent object">
                 <div class="text notetext">
-                    <img class="doodles" id="mountains" src="IMG/forexperiences/mountains.png"> 
+                    <img class="doodles" id="mountains" src="IMG/forexperiences/mountains.png" alt="mountains"> 
                    So far, high school has been a roller coaster. I have made plenty of new friends and learnt so much at Westlake, although sometimes I feel pressured when studying for tests (but I believe pressure is a good thing as it makes you work harder). It is quite different to intermediate and primary because you change classes/teachers more often. There has definitely been an increase in the amount of homework we get and sometimes I struggle at home, to fit in homework after all my school activities. I hope in the future, that I will have the courage to try new things and grab opportunities so that I am an experienced and and knowledgeable girl who can make a difference in the world. 
                 </div>
-                <img class="pin" src="IMG/forexperiences/purple%20pin.png">
+                <img class="pin" src="IMG/forexperiences/purple%20pin.png" alt="pin">
             
             </div>
      
-      <img class="paperdrawings object" src="IMG/forexperiences/molecule.png">
+      <img class="paperdrawings object" src="IMG/forexperiences/molecule.png" alt="molecule">
         
          <div class="noteparent object">
                 <div class="text notetext">
                   In the first few weeks of school it was quite nerve wracking because the school was really big and I had no idea where to go for all of my classes. Eventually you learn where all the blocks are and then you realise it isn’t actually as hard as you imagined. The thing that I found most interesting about high school is that I didn’t know anyone in most of my classes but I found that I made friends quite easily and I connected with people that I would never have if my friends from my old school were in my classes. 
                 </div>
-                <img class="pin" src="IMG/forexperiences/greenpin.png">
+                <img class="pin" src="IMG/forexperiences/greenpin.png" alt="pin">
             </div>
      
-              <img class="paperdrawings object" src="IMG/forexperiences/chromosome.png">
+              <img class="paperdrawings object" src="IMG/forexperiences/chromosome.png" alt="chromosome">
 
               <div class="noteparent object">
                 <div class="text notetext">
-                    <img class="doodles" src="IMG/forexperiences/crosses.png">
+                    <img class="doodles" src="IMG/forexperiences/crosses.png" alt="naughts and crosses">
                   I found high school quite challenging because there was a lot more homework given and the school is so much bigger than my intermediate. I found it interesting that we got to carry our bags everywhere we went as well as getting a timetable (which determines the classes you have each day) and being able to keep our phones with us all day. I found it helpful to use a diary to track all my activities. There are also a lot of sports and clubs that you can consider joining here.
                 </div>
         </div>
         
-        <img class="paperdrawings object" src="IMG/forexperiences/atom.png">
+        <img class="paperdrawings object" src="IMG/forexperiences/atom.png" alt="atom">
         
                <div class="noteparent object">
                 <div class="text notetext">   
@@ -223,10 +232,10 @@ win.scroll(function(event) {
 
                   <p>Some general tips for the next year of students is try to get your homework done before the due date because you will be stressing the night before.<p>
 
-                <img class="pin" src="IMG/forexperiences/redpin.png">
+                <img class="pin" src="IMG/forexperiences/redpin.png" alt="pin">
                    </div></div>
            
-                   <img class="paperdrawings object" src="IMG/forexperiences/flower.png">               
+                   <img class="paperdrawings object" src="IMG/forexperiences/flower.png" alt="flower">               
     
                    <div class="noteparent object">
                 <div class="text notetext">
@@ -252,12 +261,12 @@ win.scroll(function(event) {
                     <li>Stay positive even if you feel overwhelmed with school work</li>    
                     </ul>
 
-                <img class="pin" src="IMG/forexperiences/greenpin.png">
+                <img class="pin" src="IMG/forexperiences/greenpin.png" alt="pin">
             </div>          
                        
                     <div class="noteparent object">
                 <div class="text notetext">
-                    <img class="doodles" id="clouds" src="IMG/forexperiences/clouds.png"> 
+                    <img class="doodles" id="clouds" src="IMG/forexperiences/clouds.png" alt="cloud"> 
                   <strong>Challenges:</strong>
                     <ul>
                     <li>Getting used to the amount of assignments we get</li>
@@ -287,7 +296,7 @@ win.scroll(function(event) {
                     </ul>
                 
                  </div>
-                <img class="pin" src="IMG/forexperiences/pinkpin.png">
+                <img class="pin" src="IMG/forexperiences/pinkpin.png" alt="pin">
             </div>
        
                    </div>

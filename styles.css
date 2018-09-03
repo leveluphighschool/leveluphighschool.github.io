@@ -1,16 +1,19 @@
 body.notebook {
+    /**Code responsible for the ruled notepage background design seen on all the pages except for the Experience page*/
     background-image: linear-gradient(#b8d9ff .1em, transparent .1em);
     background-size: 100% 1.2em;
     background-color: #f5f5f5;
 }
 
 #experiencesbackground {
+    /**Corkboard background image for Experience Page*/
     background-image: url(IMG/forexperiences/corkboard.jpg);
     width: 100%;
     background-repeat: repeat-y;
 }
 
 img.logo {
+    /**Centres the main pencil logo*/
     position: absolute;
     top: 25%;
     left: 50%;
@@ -18,8 +21,9 @@ img.logo {
 }
 
 div.slogan {
+    /**'Your guide to acing high school' slogan properties*/
     font-family: 'Nanum Pen Script', cursive;
-    font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: 4vw;
     color: white;
     text-align: center;
     position: absolute;
@@ -29,12 +33,14 @@ div.slogan {
 
 
 h1.openingmessage {
+    /**Properties of the 'Starting high school?' text seen on Home Page*/
     font-family: 'Nanum Pen Script', cursive;
     text-align: center;
     font-size: calc(50px + (160 - 50) * ((100vw - 300px) / (1600 - 300)));
 }
 
 p.openingmessage {
+    /**Properties of the response to 'Starting high school?' seen on the Home Page*/
     font-family: 'Oxygen', sans-serif;
     text-align: center;
       font-size: calc(16px + (40 - 16) * ((100vw - 300px) / (1600 - 300)));
@@ -50,6 +56,7 @@ img.bannerimage {
 }
 
 div.iconrow {
+    /**div.iconrow is a flex-box container which holds all the icons and text present for the navigation bar */ 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -66,6 +73,7 @@ p.textrow {
 
 
 div.navigationbar {
+    /**Code for the brown navigation bar*/
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -77,6 +85,7 @@ div.navigationbar {
 }
 
 img.icon {
+    /**Properties of the small images on the Navigation Bar*/
     max-width: 35%;
     display: block;
     margin-left: auto;
@@ -106,6 +115,7 @@ div.footer {
 }
 
 div.divider {
+    /**Controls the white divider boxes seen on the navigation*/
     position: absolute;
     background-color: white;
     padding: 2px;
@@ -146,11 +156,13 @@ a.link {
 }
 
 div.column:hover {
+    /**Hovering over a link will cause background-color to change to darkTurquoise */
     background-color: darkturquoise;
 }
 
  
 div.column button {
+    /**The toggle button which shows and hide the drop down responsive menu*/
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -165,6 +177,7 @@ button {
 @media screen and (max-width: 760px) {
  
     button {
+        /**Shows the toggle button which allows the responsive drop down menu to show/hide*/
         display: inline-block;
 
     }
@@ -239,6 +252,7 @@ p.mainHeading {
 }
 
 div.mainBanner {
+    /**Controls the way the main heading banner for all the pages (except Home) behaves*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -249,6 +263,7 @@ div.mainBanner {
     text-align: center;
 }
 
+/**However each main Heading banner for each page will have its own background colour*/
 #whattoexpect {
      background-color: #ccbbff;
 }
@@ -292,6 +307,8 @@ div.list, .listpostit {
     background-color: transparent;
 }
 
+/**Controls the placement of the images above text and centred present in the What To Expect and Academic pages */
+
 div.imagecontainer {
     display: flex;
     flex-direction: row;
@@ -319,7 +336,7 @@ img.summaryimage {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
 }
 
@@ -343,12 +360,14 @@ div.section {
 
 @media screen and (max-width: 1200px) {
     div.imagecontainer {
+        /**Causes images to appear stacked one on top of the other */
         flex-direction: column;
         align-items: center;
     }
     
 }
 
+/**The CSS code copied from . https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ which is responsible for the fade in effect*/
 .come-in {
   transform: translateY(150px);
   animation: come-in 0.8s ease forwards;
@@ -380,88 +399,28 @@ img.flaskRight {
     margin-right: 5px;
 }
 
-/* Extra-Curricular */ 
-
-.postitwrapper.yellowPost {
-    background-image: url(IMG/forextracurricular/yellowpost.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-    height: 900px;
-    max-width: 900px;
-    float: right;
-}
-
-.postitwrapper.orangePost {
-    background-image: url(IMG/forextracurricular/orangepost.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-    height: 900px;
-    max-width: 900px;
-    float: left;
-}
-
-.postitwrapper.bluePost {
-    background-image: url(IMG/forextracurricular/bluepost.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-    height: 900px;
-    max-width: 900px;
-    float: right;
-}
-
-.postitwrapper.pinkPost {
-    background-image: url(IMG/forextracurricular/pinkpost.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-    height: 900px;
-    max-width: 900px;
-    float: left;
-}
-
+/** Extra-Curricular */ 
 
 #amnesty, #yellowsoccerball, #bookart, #vanessa {
     width: 100%;
-    position: absolute;
-    display: block;
-    margin: auto;
-    bottom: 0;
-    top: 0;
 }
 
 #yellowsoccerball {
-    max-width: 750px;
-    left: -35px;
-    right: -6px;
+    transform: rotate(7deg);
 }
 
 #amnesty {
     transform: rotate(6deg);
-    max-width: 680px;
-    left: 0;
-    right: -35px;
-
 }
 
-#bookart {
+#bookart, #vanessa {
     transform: rotate(-6deg);
-    max-width: 680px;
-    left: -35px;
-    right: 0px;
 }
 
-#vanessa {
-    max-width: 550px;
-     left: 0px;
-     right: 0px;
+#amnesty, #bookart {
+    transform: none;
 }
+    
 
 #extracurricularendtitle {
     clear: both;
@@ -473,51 +432,13 @@ img.flaskRight {
 
 @media screen and (max-width: 1600px) {
     .listpostit, .listpostit p {
+        /**Allows text which wrapped to the side of post it notes to instead appear underneath*/
         clear: both;
     }
-    
-    .postitwrapper.bluePost, .postitwrapper.yellowPost, .postitwrapper.orangePost, .postitwrapper.pinkPost {
-        float: none;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
+
 }
 
 
-@media screen and (max-width: 1000px) {
-    .postitwrapper.bluePost, .postitwrapper.yellowPost, .postitwrapper.orangePost, .postitwrapper.pinkPost {
-        background-image: none;
-    }
-    
-    #amnesty, #bookart, #vanessa, #yellowsoccerball {
-        float: none;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    
-    #amnesty, #bookart {
-    transform: none;
-    }
-    
-    #bookart {
-        left: 0;
-    }
-    
-    #vanessa {
-        transform: rotate(-6deg);
-    }
-    
-    #yellowsoccerball {
-        transform: rotate(7deg);
-    }
-    
-    #map2 {
-        display: none;
-    }
-}
 
 /* Experiences */
 
@@ -563,6 +484,7 @@ img.pin {
 }
 
 div.noteparent p {
+    /**Styles the text inside each yellow note*/
     margin-bottom: 1px;
 }
 
@@ -578,6 +500,7 @@ img.doodles {
 }
 
 .notetext {
+    /**The ruled paper background for the yellow notes*/
     background-image: linear-gradient(#BAD996 .1em, transparent .1em);
     background-size: 100% 1.2em;
     background-color: #FEF389;

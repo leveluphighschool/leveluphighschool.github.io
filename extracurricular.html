@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extra-Curricular</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
+  
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">/** The script below was made with assistance from www.stackoverflow.com/questions/33678676/navigatin-bar-toggle-menu-jquery# 
+    and 
+    www.w3schools.com/jquery/jquery_hide_show.asp.
+    
+    It controls the 'toggle' button which shows and hides the responsive navigation menu. The 'resize function' seen means that if the viewport width is greater than 760px (less than this width is when the responsive navigation bar (vertical links) first appears, then the horizontal links navigation bar will always be shown. */</script>
+<script>
+$(document).ready(function(){
+
+    $(window).resize(function(){
+         if ($(window).width() >=760) {
+            $(".iconrow").show();
+        }
+        else{ $(".iconrow").hide();}
+    });
+    $('button').click(function (){
+       $("div.iconrow").slideToggle(500);
+    }); 
+ });   
+    
+</script>    
+ 
+    
+    <script> 
+     
+       /** This script was made fully with the help of https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ and involves the use of not only jQuery to compare how close an element is to the visible window of screen, but all CSS transitions to employ the fade in effect. */  
+     (function($) {     
+       
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery); 
+    
+    
+    
+    $(window).scroll(function(event) {
+  
+  $(".object").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    var win = $(window);
+var allMods = $(".object");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+    </script>    
+    
+</head>
+    
+    
+    <body class="notebook"> 
+        
+<!-- Navigation Bar -->    
+    <div class='banner'>
+    <!-- Logo -->
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" alt="navigation" width="20%"></a>
+        
+        <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
+        
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%" alt="books">
+    
+        
+    <!-- Icons on Navigation Bar -->    
+<div class="navigationbar" alt="navigation">   
+    
+<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" alt="navigation button"width="5%"></button></div>
+    
+    <div class="iconrow">
+            
+            <div class="column"><a class="link" href="whattoexpect.html">
+             <img class="icon" src="IMG/navigation/sun.png" alt="What To Expect">
+             <p class="textrow">WHAT TO EXPECT</p>  
+           </a> </div>
+       
+           <div class="column">
+           <div class="divider"></div></div>
+        
+            <div class="column"><a class="link" href="academic.html">
+             <img class="icon" src="IMG/navigation/lightbulb.png" alt="Academic">
+             <p class="textrow">ACADEMIC</p> </a> </div>
+        
+           <div class="column"><div class="divider"></div></div>
+        
+           <div class="column"><a class="link" href="extracurricular.html">
+             <img class="icon" src="IMG/navigation/soccerball.png" alt="Extra-Curricular">
+             <p class="textrow">EXTRA-CURRICULAR</p>  
+              </a> </div>
+        
+            <div class="column"><div class="divider"></div></div>
+       
+       
+           <div class="column"><a class="link" href="experiences.html">
+             <img class="icon" src="IMG/navigation/people.png" alt="Experiences">
+             <p class="textrow">EXPERIENCES</p>  
+               </a></div>
+
+     </div>
+</div>
+     </div>   
+        
+
+        
+<!-- Main 'Extra-Curricular' Banner -->    
+        <div class="mainBanner" id="extracurricular"><p class="mainHeading">EXTRA CURRICULAR</p></div>
+
+        
+        <div class="content object"> <div id="opening"><i>Extra curricular activities are a huge part of life in high school. </i></div> </div>
+        
+    
+        
+        <div class="containerforcontent">
+            <div class="content" id="postit">
+                
+       <img id="yellowsoccerball" src="IMG/forextracurricular/soccerball.png" alt="soccerball" class="smallimage">
+            <div class="listpostit"> ~ SPORTS ~ </div>
+            <p>This changes from school to school, however the huge range of sports you can try at high school include Basketball, Athletics, Hockey, Netball, Waterpolo, Equestrian, Archery and Orienteering to name a few. But, there's always a space for you, no matter how badly you can kick a ball. As well as the competitive competition, many schools will let you get together with your friends and form a team for the 'social' or non-competitive competition. </p> </div></div>
+<br>
+<br>      
+        <div class="containerforcontent"><div class="content" id="postit"> 
+            
+            <img id="vanessa" src="IMG/forextracurricular/vanessa.png" alt="Vanessa" class="smallimage">
+            <div class="listpostit"> ~ MUSIC ~ </div>
+            <p>Many schools allow you to have music or singing lessons to help you learn a new instrument or develop your voice. Also don't forget about the orchestras and choirs that you can audition for based on your ability as well! The top music groups have the opportunity to compete in nation-wide competitions such as KBB Music Festival and the Big Sing, and win awards for outstanding performances.</p>  </div></div> 
+<br>
+<br>         
+        <div class="containerforcontent"><div class="content" id="postit">
+            
+            <img id="bookart" src="IMG/forextracurricular/bookart.jpg" alt="Book Art" class="smallimage">
+            <div class="listpostit"> ~ ARTS ~ </div>
+            <p>High school gives you a lot of chance to show off your creativity in not only drawing, but also through Dance and Drama. Joining dance troupes and the school production are both rewarding experiences and you don't have to be a performer to do so. Behind the scenes, you can help set and prop designs as well as costuming. </p>
+            </div></div>
+<br> 
+    <div class="containerforcontent">
+        <div class="content" id="postit">
+            
+            <img id="amnesty" src="IMG/forextracurricular/amnesty.jpg" alt="Amnesty International" class="smallimage">
+            <div class="listpostit object"> ~ HUMANITIES ~ </div>
+            <p>Joining humanitarian groups such as Envirogroup (concerned about the environment), Amnesty International (human rights organisation) and UNICEF (concerned about well-being of children in developing countries) or even debating are so helpful in opening your eyes to the issues of the world today. They are a space where you can develop your own opinions on these topics, and participate in social actions or fundraising in order to make the world a better place. </p> </div> </div>
+        
+         
+        <h1 class="openingmessage object" id="extracurricularendtitle">Still not keen?</h1>
+        
+        <div class="section object text">What about starting your own club? Even if your passions lie in reading, chess or knitting, if you pitch your idea well enough to the deans, there's is nothing stopping you from doing so! </div>
+        
+        
+            <br>
+       
+    <div class="footer"> </div>    
+        
+
+    
+    </body>
+    
+   
+    
+</html>    
