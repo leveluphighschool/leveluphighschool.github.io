@@ -10,12 +10,9 @@
   
     
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-        /** The script below was made with assistance from www.stackoverflow.com/questions/33678676/navigatin-bar-toggle-menu-jquery# 
-    and 
-    www.w3schools.com/jquery/jquery_hide_show.asp.
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
     
-    It controls the 'toggle' button which shows and hides the responsive navigation menu. The 'resize function' seen means that if the viewport width is greater than 760px (less than this width is when the responsive navigation bar (vertical links) first appears, then the horizontal links navigation bar will always be shown. */</script>
+    </script>
 <script>
 $(document).ready(function(){
 
@@ -34,7 +31,7 @@ $(document).ready(function(){
  
     
     <script> 
-         /** This script was made fully with the help of https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ and involves the use of not only jQuery to compare how close an element is to the visible window of screen, but all CSS transitions to employ the fade in effect. */  
+        /** This script was made fully with the help of https://css-tricks.com/slide-in-as-you-scroll-down-boxes/ and involves the use of not only jQuery to compare how close an element is to the visible window of screen, but all CSS transitions to employ the fade in effect. */ 
      (function($) {     
        
   /**
@@ -103,22 +100,22 @@ win.scroll(function(event) {
 </head>
     
     
-    <body class="notebook"> 
+    <body id="experiencesbackground"> 
         
 <!-- Navigation Bar -->    
     <div class='banner'>
     <!-- Logo -->
-        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" alt="navigation" width="20%"></a>
+        <a href="index.html"><img class= "logo" src="IMG/navigation/logo.png" alt="navigation"></a>
         
         <a href="index.html"><div class="slogan">Your guide to acing high school</div></a>
         
-        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" width="100%" alt="books">
+        <img class="bannerimage" src="IMG/navigation/booksbackground.jpg" alt="books">
     
         
     <!-- Icons on Navigation Bar -->    
-<div class="navigationbar" alt="navigation">   
+<div class="navigationbar">   
     
-<div class="column" id="button"><button><img src="IMG/navigation/menubutton.png" alt="navigation button"width="5%"></button></div>
+<div class="column" id="button"><button><img id="menubutton" src="IMG/navigation/menubutton.png" alt="navigation button"></button></div>
     
     <div class="iconrow">
             
@@ -154,6 +151,7 @@ win.scroll(function(event) {
      </div>   
         
 
+
         
 <!-- Main 'Experiences' Banner -->    
         <div class="mainBanner" id="experiences">
@@ -166,9 +164,9 @@ win.scroll(function(event) {
         </div>
 
         
-        <div class="content object"> <div id="opening"><i><p>Anxious to know what high school life is like?</p> Here are some responses, advice and other tips from seven current Year 9 students on their experience in high school so far!</i></div> </div>
+        <div class="content object"> <div id="opening"><i>Anxious to know what high school life is like? <br>Here are some responses, advice and other tips from seven current Year 9 students on their experience in high school so far!</i></div> </div>
    
-<section id="grid">   
+<div id="grid">   
     <img class="paperdrawings object" src="IMG/forexperiences/leaf.png" alt="vine">
     
     <div class="noteparent object">
@@ -301,7 +299,7 @@ win.scroll(function(event) {
        
                    </div>
                 
-</section>     
+</div>     
     
     
     <br>
