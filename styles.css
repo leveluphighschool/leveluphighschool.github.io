@@ -432,7 +432,9 @@ img.flaskRight {
     clear: both;
 }
 
-
+.content.extra {
+    background-color: transparent;
+}
 
 @media screen and (max-width: 1600px) {
     .listpostit, .listpostit p {
