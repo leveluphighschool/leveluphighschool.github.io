@@ -47,11 +47,14 @@ h1.openingmessage {
     font-size: calc(50px + (160 - 50) * ((100vw - 300px) / (1600 - 300)));
 }
 
-p.openingmessage {
+div.openingmessage {
     /**Properties of the response to 'Starting high school?' seen on the Home Page*/
     font-family: 'Oxygen', sans-serif;
     text-align: center;
-      font-size: calc(16px + (40 - 16) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(16px + (40 - 16) * ((100vw - 300px) / (1600 - 300)));
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
 }
 
 
@@ -114,7 +117,7 @@ div.content {
     background-color: 	#FFD39B;
     width: 100%;
     font-family: 'Oxygen', sans-serif;
-    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 div.leftaligntext {
@@ -344,18 +347,18 @@ div.opening {
 }
 
 .text {
-    width: 95%;
+    width: 80%;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(15px + (22 - 15) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Oxygen', sans-serif;
 }
 
 p.subheading {
     font-family: 'Nanum Pen Script', cursive;
-    font-size: calc(40px + (150 - 40) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(40px + (70 - 40) * ((100vw - 300px) / (1600 - 300)));
     margin-bottom: 0;
     margin-top: 50px;
 }
@@ -460,7 +463,7 @@ div.section {
     border-color: rgb(185,117,67);
     margin-left: 10%;
     margin-right: 10%;
-    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
     font-style: italic;
 }
 
